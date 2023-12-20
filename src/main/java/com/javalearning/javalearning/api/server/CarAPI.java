@@ -30,7 +30,8 @@ public class CarAPI {
 	@PostMapping(value="/echo")
 	public String echo(@RequestBody Car car)
 	{
-		LOG.info("Car is : " + car);
+		
+		LOG.info("Car is :" + car);
 		return car.toString();
 	}
 	
